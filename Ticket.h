@@ -1,4 +1,4 @@
-class ticket
+class Ticket
 {
-    void ticket_display();
+    void Ticket_display();
 };
