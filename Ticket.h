@@ -1,4 +1,1 @@
-class ticket
-{
-    void ticket_display();
-};
+class Ticket{};
