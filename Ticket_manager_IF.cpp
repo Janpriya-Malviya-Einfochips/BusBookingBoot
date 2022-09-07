@@ -1,4 +1,4 @@
-class ticket_manager_IF
+class TicketmanagerIF
 {
     public:
     virtual void book_ticket()=0;
