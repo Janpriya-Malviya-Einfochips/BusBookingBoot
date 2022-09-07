@@ -8,7 +8,7 @@ class RouteManager
 {
     public:
         list<Route>routes; 
-        void AddRoute();
+        //void AddRoute();
         void DeleteRoute();
         void MakeFunctional();
 

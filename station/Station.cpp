@@ -1,11 +1,12 @@
-#include<station.h>
+#include"station.h"
 #include<iostream>
 #include<string>
+using namespace std;
 class Station:public StationIF
 {
     public:
-    int stCode;
-    char stName[40];
+    enum Station_Code{ Ahm ,Abu ,pali,kalol};
+    string stName;
     bool IsFunctional;
     
 
