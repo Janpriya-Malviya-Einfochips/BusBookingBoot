@@ -1,7 +1,6 @@
 #include<iostream>
 #include<memory>
 #include "RouteManagerIF.h"
-using namespace std;
 class RouteIF 
 {
     public:
