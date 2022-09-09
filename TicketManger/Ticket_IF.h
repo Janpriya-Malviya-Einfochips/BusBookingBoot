@@ -8,6 +8,5 @@ public:
     TicketIF() {}
     viratual ~TicketIF() {}
 
-    virtual void CancleTicket() = 0;
-
+    //virtual void CancleTicket() = 0;
 };
