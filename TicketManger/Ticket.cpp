@@ -1,13 +1,12 @@
 #include<iostream>
 #include<memory>
 #include"Ticket.h"
-using namespace std;
 void Ticket::DisplayTicket()
 {
-    cout<<"Source : "<<getSource()<<endl;
-    cout<<"Destination : "<<getDestination()<<endl;
-    cout<<"PNR : "<<genratePNR()<<endl;
-    cout<<"TYPE :"<<getClasstype()<<endl;
-    cout<<"Ticket staus : "<<getStatus()<<endl;
-    cout<<"Seat NO. : "<<getSeatno()<<endl;
+    std::cout<<"Source : "<<getSource()<<endl;
+    std::cout<<"Destination : "<<getDestination()<<endl;
+    std::cout<<"PNR : "<<genratePNR()<<endl;
+    std::cout<<"TYPE :"<<getClasstype()<<endl;
+    std::cout<<"Ticket staus : "<<getStatus()<<endl;
+    std::cout<<"Seat NO. : "<<getSeatno()<<endl;
 }

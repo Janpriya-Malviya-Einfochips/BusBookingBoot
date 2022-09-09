@@ -1,7 +1,6 @@
 
 #include<iostream>
 #include<memory>
-using namespace std;
 class Ticket_manager_IF
 {
 public:

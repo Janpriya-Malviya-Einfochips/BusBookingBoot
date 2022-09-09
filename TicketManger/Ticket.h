@@ -1,7 +1,5 @@
 #include<iostream>
 #include<memory>
-
-using namespace std;
 class Ticket:public std::enable_shared_from_this<Ticket>
 {
     private:
@@ -10,12 +8,12 @@ class Ticket:public std::enable_shared_from_this<Ticket>
     public:
         typedef std::shared_ptr<Ticket> ptr;
         void genrateTicket();
-        string getName();
-        string getSource();
-        string getDestination();
+        std::string getName();
+        std::string getSource();
+        std::string getDestination();
         int genratePNR();
-        string getClasstype();
-        string getStatus();
+        std::string getClasstype();
+        std::string getStatus();
         int getSeatno();
         void DisplayTicket();
     
