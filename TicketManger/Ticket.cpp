@@ -10,3 +10,17 @@ void Ticket::DisplayTicket()
     std::cout<<"Ticket staus : "<<getStatus()<<endl;
     std::cout<<"Seat NO. : "<<getSeatno()<<endl;
 }
+
+
+TicketIF::Ptr Ticket::CreateTickit( std::string personName  )
+{
+    TicketIF::Ptr pTickit( personName );
+    reutrn   pTickit;
+}
+
+Ticket::Ticket(std::string personName)
+{
+
+
+}
+
