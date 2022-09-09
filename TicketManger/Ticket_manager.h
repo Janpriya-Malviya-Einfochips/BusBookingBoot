@@ -2,15 +2,12 @@
 #include<memory>
 //#include"TicketmangerIF"
 using namespace std;
-class TicketManager
+class TicketManager:public  std::enable_shared_from_this<TicketManager>
 {
     private:
-    TicketManager();
+        TicketManager();
     public:
-    std::enable_shared_from_this<TicketManager>
-    {
-        public:
         typedef std::shared_ptr<TicketManager> ptr;
-    }
+   
     
 };
