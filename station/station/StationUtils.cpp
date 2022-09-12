@@ -7,33 +7,35 @@
 //using namespace std;
 namespace StationUtils
 {   
-    enum StationCode 
-    {
-        AHMEDABAD=0,
-        ABU =1, 
-        PALI=2,
-        KALOL=3,
-    };    
+    // enum StationCode 
+    // {
+    //     AHMEDABAD=0,
+    //     ABU =1, 
+    //     PALI=2,
+    //     KALOL=3,
+    // };    
     static std::map<enum StationCode , std::tuple<std::string,std::string> > StationList = 
     {
-       {"AHMEDABAD" ,("AHMEDABAD","Ahm")},
-       {"ABU",("ABU" ,"Abu")},
-       {"PALI",("PALI","Pali")},
-       {"KALOL",("KALOL","kal")}
+       {AHM ,("AHMEDABAD","Ahm")},
+       {ABU,("ABU" ,"Abu")},
+       {PALI,("PALI","Pali")},
+       {KALOL,("KALOL","kal")}
     };
+};
 
-StationCode Enum_to_station(int code)
+
+ StationCode StationNametoStationCode(std::string s)
 {
     //StationUtils::StationCode enumvar;
-   // std::cin>>enumvar;
-        switch (code)
+   std::cin>>s;
+        switch ()
         {
-        case 0:
-            //return StationCode::AHMEDABAD;
-            std::cout<<"this is ahm";
+        case AHM:
+            return StationCode::AHMEDABAD;
+            //std::cout<<"this is ahm";
             break;
-        case 1:
-            std::cout<<"this is abu";
+        case ABU:
+            return StationCode::AHMEDABAD;
             break;
         case 2:
             std::cout<<"this is pali";
@@ -47,7 +49,7 @@ StationCode Enum_to_station(int code)
         }
     }
 
-StationCode getstationToenum (StationCode s)
+void getstationToStationCode (StationCode s)
 {
         switch (s)
         {
