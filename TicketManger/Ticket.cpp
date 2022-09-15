@@ -1,12 +1,26 @@
+
 #include<iostream>
 #include<memory>
+#include<map>
 #include"Ticket.h"
-void Ticket::DisplayTicket()
+#include"Ticket_IF.h"
+
+Ticket::Ticket( std::string personName , std::string srcStationCode ,std::string desStationCo , std::string ClassType )
 {
-    std::cout<<"Source : "<<getSource()<<endl;
-    std::cout<<"Destination : "<<getDestination()<<endl;
-    std::cout<<"PNR : "<<genratePNR()<<endl;
-    std::cout<<"TYPE :"<<getClasstype()<<endl;
-    std::cout<<"Ticket staus : "<<getStatus()<<endl;
-    std::cout<<"Seat NO. : "<<getSeatno()<<endl;
+    // std::string TicketID;
+    // TicketID=genratePNR();
+
+
 }
+TicketIF::Ptr Ticket::CreateTicket(std::string personName ,std::string srcStationCo , std::string desStationCo, std::string ClassType)
+{
+    TicketIF::Ptr pTickit( new Ticket( personName , srcStationCo ,desStationCo, ClassType) );
+    return pTickit;
+}
+// std::string Ticket::genratePNR()
+// {
+//     return 
+// }
+
+
+
